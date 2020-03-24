@@ -6,6 +6,7 @@ namespace Entities.Domain
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public Artista Artista { get; set; }
+        public int ArtistaId { get; set; }
+        public Artista Artistas { get; set; }
     }
 }

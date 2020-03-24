@@ -23,7 +23,7 @@ namespace WebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Album>>> Get()
         {
-            var albumes = await repository.GetAsync();
+            var albumes = await repository.GetAsync(includeProperties: "Artistas");
             return Ok(albumes);
 
         }

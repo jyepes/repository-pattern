@@ -5,7 +5,7 @@ namespace DataAccess.Generic
 {
     public interface IUnitOfWork: IDisposable
     {
-        public ApplicationDbContext Context { get; }
+        ApplicationDbContext Context { get; }
         void Commit();
     }
 
